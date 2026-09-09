@@ -12,7 +12,7 @@ class OnboardingScreen extends StatelessWidget {
       backgroundColor: AppColors.background,
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 16.0),
+          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 16),
           child: ListView(
             children: [ 
               Container(
