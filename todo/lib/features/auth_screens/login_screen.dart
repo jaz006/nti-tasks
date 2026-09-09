@@ -132,7 +132,7 @@ class _RegisterScreenState extends State<LoginScreen> {
            
             const SizedBox(height: 20),
 
-            // Register Button
+            // login Button
             GestureDetector(
               onTap: () {
                 Navigator.pushAndRemoveUntil(
