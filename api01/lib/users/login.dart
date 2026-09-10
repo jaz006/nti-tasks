@@ -1,0 +1,29 @@
+import 'package:api01/core/endpoint.dart';
+import 'package:api01/core/handleeception.dart';
+import 'package:dio/dio.dart';
+
+Dio dio = Dio(
+  BaseOptions(
+    baseUrl: EndPoints.baseUrl,
+    receiveDataWhenStatusError: true
+  ),
+);
+
+
+Future<void> login()async{
+  try {
+    var response = await dio.post(
+      EndPoints.login,
+      data: FormData.fromMap({
+        "email": "yasmine@gmail.com",
+        "password": "123456",
+      })
+  );
+
+  print(response.toString());
+
+}
+  catch (e) {
+    handleException(e);
+  }
+}

@@ -1,0 +1,38 @@
+import 'package:api01/core/endpoint.dart';
+import 'package:api01/core/handleeception.dart';
+import 'package:dio/dio.dart';
+
+Dio dio = Dio(
+  BaseOptions(
+    baseUrl: EndPoints.baseUrl,
+    receiveDataWhenStatusError: true
+  ),
+);
+
+
+Future<void> newSlider()async{
+  try {
+    var response = await dio.post(
+      EndPoints.newSlider,
+      data: FormData.fromMap({
+        "title": "yasmine amgad",
+        "description": "kkkkk kkkk",
+        "image": await MultipartFile.fromFile(
+        "C:/Users/DDR3store/Pictures/Saved Pictures/myphoto.jpeg",
+        filename: "myphoto.jpeg",
+      ),
+      }), 
+      options: Options(
+        headers: {
+          "Authorization" : "Bearer ${EndPoints.token}"
+        }
+      )
+  );
+
+  print(response.toString());
+
+}
+  catch (e) {
+    handleException(e);
+  }
+}
