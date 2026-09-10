@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:todo/core/utils/apps_assets.dart';
 import 'package:todo/core/utils/apps_colors.dart';
 import 'package:todo/features/auth_screens/onboarding_screen.dart';
 
@@ -33,9 +34,7 @@ class _SplashScreenState extends State<SplashScreen> {
     return Scaffold(
       backgroundColor: AppColors.background,
       body: Center(
-        child: SvgPicture.asset(
-          'assets/Images/logo.svg',
-        ),
+        child:  SvgPicture.asset(AppSvgs.logo),
       ),
     );
   }

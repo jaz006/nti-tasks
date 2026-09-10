@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil_plus/flutter_screenutil_plus.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:todo/core/utils/apps_assets.dart';
 import 'package:todo/core/utils/apps_colors.dart';
 import 'package:todo/features/auth_screens/register_screen.dart';
 import 'package:todo/features/home/home_screen.dart';
@@ -38,7 +40,7 @@ class _RegisterScreenState extends State<LoginScreen> {
         child: ListView(
           children: [
             Container(
-              height: 270,
+              height: 270.h,
               width: double.infinity,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20),
@@ -46,7 +48,7 @@ class _RegisterScreenState extends State<LoginScreen> {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(20),
                 child: Image.asset(
-                  'assets/Images/flag.png',
+                  AppImages.flag,
                   fit: BoxFit.cover,
                 ),
               ),
@@ -66,9 +68,9 @@ class _RegisterScreenState extends State<LoginScreen> {
                 prefixIcon: Padding(
                   padding: const EdgeInsets.all(12.0),
                   child: SvgPicture.asset(
-                    'assets/Images/Profile - Iconly Pro.svg',
-                    width: 24,
-                    height: 24,
+                    AppSvgs.profile,
+                    width: 24.w,
+                    height: 24.h,
                   ),
                 ),
                 filled: true,
@@ -102,23 +104,23 @@ class _RegisterScreenState extends State<LoginScreen> {
                     });
                   },
                   icon: SvgPicture.asset(
-                    'assets/Images/Unlock - Iconly Pro.svg',
-                    width: 24,
-                    height: 24,
+                    AppSvgs.unlock,
+                    width: 24.w,
+                    height: 24.h,
                   ),
                 ),
                 prefixIcon: Padding(
                   padding: const EdgeInsets.all(12.0),
                   child: SvgPicture.asset(
-                    'assets/Images/Password - Iconly Pro.svg',
-                    width: 24,
-                    height: 24,
+                    AppSvgs.password,
+                    width: 24.w,
+                    height: 24.h,
                   ),
                 ),
                 filled: true,
                 fillColor: Colors.white,
                 border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(15),
+                  borderRadius: BorderRadius.circular(15.r),
                 ),
                 contentPadding: const EdgeInsets.symmetric(
                   horizontal: 16,
@@ -145,7 +147,7 @@ class _RegisterScreenState extends State<LoginScreen> {
               },
               child: Container(
                 width: double.infinity,
-                height: 56,
+                height: 56.h,
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
                   color: AppColors.primary,

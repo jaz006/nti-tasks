@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil_plus/flutter_screenutil_plus.dart';
 import 'package:todo/core/utils/apps_colors.dart';
 
 class ChangePasswordScreen extends StatelessWidget {
@@ -7,7 +8,7 @@ class ChangePasswordScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFF5F6FA),
+      backgroundColor: AppColors.background,
       body: SafeArea(
         child: SingleChildScrollView(
           padding: const EdgeInsets.all(20),
@@ -29,14 +30,14 @@ class ChangePasswordScreen extends StatelessWidget {
               
               Container(
                 width: double.infinity,
-                height: 220,
+                height: 220.h,
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(16),
+                  borderRadius: BorderRadius.circular(16.r),
                   boxShadow: [
                     BoxShadow(
                       color: Colors.black.withOpacity(0.15),
                       blurRadius: 12,
-                      offset: const Offset(0, 6),
+                      offset:  Offset(0, 6),
                     ),
                   ],
                 ),
@@ -57,11 +58,11 @@ class ChangePasswordScreen extends StatelessWidget {
 
               Container(
                 width: double.infinity,
-                height: 56,
+                height: 56.h,
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
                   color: AppColors.primary,
-                  borderRadius: BorderRadius.circular(14),
+                  borderRadius: BorderRadius.circular(14.r),
                   boxShadow: [
                     BoxShadow(
                       color: Color(0xFF149954).withValues(alpha: 0.80),
@@ -90,7 +91,7 @@ class ChangePasswordScreen extends StatelessWidget {
   //reusable widget
   Widget _buildPasswordField({required String hint}) {
     return Container(
-      height: 52,
+      height: 52.h,
       padding: const EdgeInsets.symmetric(horizontal: 16),
       decoration: BoxDecoration(
         color: Colors.white,

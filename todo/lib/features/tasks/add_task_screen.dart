@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil_plus/flutter_screenutil_plus.dart';
+import 'package:todo/core/utils/apps_assets.dart';
 import 'package:todo/core/utils/apps_colors.dart';
 
 class AddTaskScreen extends StatefulWidget {
@@ -32,12 +34,12 @@ class _AddTaskScreenState extends State<AddTaskScreen> {
           children: [
             Container(
               margin: EdgeInsets.all(20),
-              height: 207,
-              width: 261,
+              height: 207.h,
+              width: 261.w,
               child: ClipRRect(
                  borderRadius: BorderRadius.circular(30),
                 child: Image.asset(
-                  'assets/Images/flag.png',
+                  AppImages.flag,
                   fit: BoxFit.cover,
                 ),
               ),
@@ -115,9 +117,9 @@ class _AddTaskScreenState extends State<AddTaskScreen> {
                   child: Row(
                     children: [
                       Image.asset(
-                        'assets/Images/homeicon.png',
-                        width: 20,
-                        height: 20,
+                        AppImages.homeIcon,
+                        width: 20.w,
+                        height: 20.h,
                       ),
                       SizedBox(width: 10),
                       Text('Home', style: TextStyle(
@@ -133,9 +135,9 @@ class _AddTaskScreenState extends State<AddTaskScreen> {
                   child: Row(
                     children: [
                       Image.asset(
-                        'assets/Images/person.png',
-                        width: 20,
-                        height: 20,
+                        AppImages.person,
+                        width: 20.w,
+                        height: 20.h,
                       ),
                       SizedBox(width: 10),
                       Text('Personal', style: TextStyle(
@@ -151,9 +153,9 @@ class _AddTaskScreenState extends State<AddTaskScreen> {
                   child: Row(
                     children: [
                       Image.asset(
-                        'assets/Images/workicon.png',
-                        width: 20,
-                        height: 20,
+                        AppImages.workIcon,
+                        width: 20.w,
+                        height: 20.h,
                       ),
                       SizedBox(width: 10),
                       Text('Work', style: TextStyle(
@@ -205,9 +207,9 @@ class _AddTaskScreenState extends State<AddTaskScreen> {
                 prefixIcon: Padding(
                   padding: const EdgeInsets.all(12),
                   child: Image.asset(
-                    'assets/Images/calendar.png',
-                    width: 20,
-                    height: 20,
+                    AppImages.calender,
+                    width: 20.w,
+                    height: 20.h,
                     color: AppColors.primary,
                   ),
                 ),
@@ -220,7 +222,7 @@ class _AddTaskScreenState extends State<AddTaskScreen> {
                 filled: true,
                 fillColor: const Color(0xFFF7F7F9),
                 border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(12),
+                  borderRadius: BorderRadius.circular(12.r),
                 ),
               ),
             ),
@@ -235,7 +237,7 @@ class _AddTaskScreenState extends State<AddTaskScreen> {
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
                   color: AppColors.primary,
-                  borderRadius: BorderRadius.circular(14),
+                  borderRadius: BorderRadius.circular(14.r),
                   boxShadow: [
                     BoxShadow(
                       color: const Color(0xFF149954).withValues(alpha: 0.80),

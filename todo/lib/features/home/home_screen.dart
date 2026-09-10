@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil_plus/flutter_screenutil_plus.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:todo/core/utils/apps_assets.dart';
 import 'package:todo/core/utils/apps_colors.dart';
 import 'package:todo/features/profile/profile_screen.dart';
 import 'package:todo/features/tasks/add_task_screen.dart';
@@ -143,8 +145,8 @@ class HomeScreen extends StatelessWidget {
                   },
                   child: Container(
                     padding: const EdgeInsets.all(12),
-                    height: 50,
-                    width: 50,
+                    height: 50.h,
+                    width: 50.w,
                     decoration: BoxDecoration(
                       color: AppColors.primary,
                       borderRadius: BorderRadius.circular(50),
@@ -158,10 +160,10 @@ class HomeScreen extends StatelessWidget {
                       ],
                     ),
                     child: SizedBox(
-                      height: 24,
-                      width: 24,
+                      height: 24.h,
+                      width: 24.w,
                       child: SvgPicture.asset(
-                        'assets/Images/Paper Plus - Iconly Pro.svg',
+                        AppSvgs.paperPlus,
                       ),
                     ),
                   ),
@@ -218,13 +220,13 @@ class TaskCardWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 335, 
-      height: 90,
+      width: 335.w, 
+      height: 90.h,
       margin: EdgeInsets.only(bottom: 12),
       padding:EdgeInsets.symmetric(horizontal: 16, vertical: 8),
       decoration: BoxDecoration(
         color: Color(0xFFCEEBDC),
-        borderRadius: BorderRadius.circular(20),
+        borderRadius: BorderRadius.circular(20.r),
         boxShadow: [
           BoxShadow(
             color: Colors.black.withValues(alpha: 0.25),

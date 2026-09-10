@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil_plus/flutter_screenutil_plus.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:todo/core/utils/apps_assets.dart';
 import 'package:todo/core/utils/apps_colors.dart';
 import 'package:todo/features/profile/change_password_screen.dart';
 import 'package:todo/features/profile/settings_screen.dart';
@@ -17,8 +19,8 @@ class ProfileScreen extends StatelessWidget {
         child: ListView( 
           children: [
            SizedBox(
-                width: 196,
-                height: 60,
+                width: 196.w,
+                height: 60.h,
                 child: Row(
                   children: [
                     const CircleAvatar(
@@ -72,15 +74,15 @@ class ProfileScreen extends StatelessWidget {
     ),
     child: Row(
       children: [
-        // Leading Icon from assets
+        
         SvgPicture.asset(
-          'assets/Images/Profile - Iconly Pro.svg', 
-          width: 24,
-          height: 24,
+          AppSvgs.profile, 
+          width: 24.w,
+          height: 24.h,
         ),
         const SizedBox(width: 12.0),
         
-        // Title Text
+        
         const Text(
           'Profile',
           style: TextStyle(
@@ -123,11 +125,11 @@ class ProfileScreen extends StatelessWidget {
     ),
     child: Row(
       children: [
-        // Leading Icon from assets
+        
         Image.asset(
-          'assets/Images/Lock - Iconly Pro.png', 
-          width: 24,
-          height: 24,
+          AppImages.lock, 
+          width: 24.w,
+          height: 24.h,
         ),
         const SizedBox(width: 12.0),
         
@@ -174,15 +176,15 @@ const SizedBox(height: 20),
     ),
     child: Row(
       children: [
-        // Leading Icon from assets
+        
         Image.asset(
-          'assets/Images/Setting - Iconly Pro.png', 
-          width: 24,
-          height: 24,
+          AppImages.setting, 
+          width: 24.w,
+          height: 24.h,
         ),
         const SizedBox(width: 12.0),
         
-        // Title Text
+        
         const Text(
           'Settings',
           style: TextStyle(

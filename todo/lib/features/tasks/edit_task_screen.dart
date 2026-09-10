@@ -1,4 +1,6 @@
-import 'package:flutter/material.dart'; 
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil_plus/flutter_screenutil_plus.dart';
+import 'package:todo/core/utils/apps_assets.dart'; 
 import 'package:todo/core/utils/apps_colors.dart'; 
 import 'package:todo/features/tasks/done_task_screen.dart'; 
  
@@ -83,8 +85,8 @@ class _EditTaskScreenState extends State<EditTaskScreen> {
                       crossAxisAlignment: CrossAxisAlignment.start, 
                       children: [ 
                         Container( 
-                          width: 60, 
-                          height: 60, 
+                          width: 60.w, 
+                          height: 60.h, 
                           decoration: const BoxDecoration( 
                             shape: BoxShape.circle, 
                             image: DecorationImage(image: AssetImage('assets/Images/flag.png'), fit: BoxFit.cover) 
@@ -127,7 +129,7 @@ class _EditTaskScreenState extends State<EditTaskScreen> {
                         filled: true, 
                         fillColor: Color(0xFFF7F7F9), 
                         border: OutlineInputBorder( 
-                          borderRadius: BorderRadius.circular(12), 
+                          borderRadius: BorderRadius.circular(12.r), 
                         ), 
                       ), 
                       items: [ 
@@ -136,9 +138,9 @@ class _EditTaskScreenState extends State<EditTaskScreen> {
                           child: Row( 
                             children: [ 
                               Image.asset( 
-                                'assets/Images/homeicon.png', 
-                                width: 20, 
-                                height: 20, 
+                              AppImages.homeIcon, 
+                                width: 20.w, 
+                                height: 20.h, 
                               ), 
                               SizedBox(width: 10), 
                               Text('Home', style: TextStyle( 
@@ -154,9 +156,9 @@ class _EditTaskScreenState extends State<EditTaskScreen> {
                           child: Row( 
                             children: [ 
                               Image.asset( 
-                                'assets/Images/person.png', 
-                                width: 20, 
-                                height: 20, 
+                                AppImages.person, 
+                                width: 20.w, 
+                                height: 20.h, 
                               ), 
                               SizedBox(width: 10), 
                               Text('Personal', style: TextStyle( 
@@ -172,9 +174,9 @@ class _EditTaskScreenState extends State<EditTaskScreen> {
                           child: Row( 
                             children: [ 
                               Image.asset( 
-                                'assets/Images/workicon.png', 
-                                width: 20, 
-                                height: 20, 
+                                AppImages.workIcon, 
+                                width: 20.w, 
+                                height: 20.h, 
                               ), 
                               SizedBox(width: 10), 
                               Text('Work', style: TextStyle( 
@@ -236,7 +238,7 @@ class _EditTaskScreenState extends State<EditTaskScreen> {
                     SizedBox(height: 20), 
                     Row( 
                       children: [ 
-                        Image.asset('assets/Images/calendar.png'), 
+                        Image.asset(AppImages.calender), 
                         const SizedBox(width: 8), 
                         const Text( 
                           '30 June, 2022  10:00 pm', 
@@ -264,11 +266,11 @@ class _EditTaskScreenState extends State<EditTaskScreen> {
                       }, 
                       child: Container( 
                         width: double.infinity, 
-                        height: 56, 
+                        height: 56.h, 
                         alignment: Alignment.center, 
                         decoration: BoxDecoration( 
                           color: AppColors.primary, 
-                          borderRadius: BorderRadius.circular(14), 
+                          borderRadius: BorderRadius.circular(14.r), 
                           boxShadow: [ 
                             BoxShadow( 
                               color: Color(0xFF149954).withValues(alpha: 0.80), 
@@ -300,11 +302,11 @@ class _EditTaskScreenState extends State<EditTaskScreen> {
                       }, 
                       child: Container( 
                         width: double.infinity, 
-                        height: 56, 
+                        height: 56.h, 
                         alignment: Alignment.center, 
                         decoration: BoxDecoration( 
                           color: AppColors.background, 
-                          borderRadius: BorderRadius.circular(14), 
+                          borderRadius: BorderRadius.circular(14.r), 
                           border: Border.all(color: AppColors.primary), 
                           boxShadow: [ 
                             BoxShadow( 

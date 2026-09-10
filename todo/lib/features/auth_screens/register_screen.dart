@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil_plus/flutter_screenutil_plus.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:todo/core/utils/apps_assets.dart';
 import 'package:todo/core/utils/apps_colors.dart';
 import 'package:todo/features/auth_screens/login_screen.dart';
 import 'package:todo/features/home/home_screen.dart';
@@ -42,7 +44,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
         child: ListView(
           children: [
             Container(
-              height: 270,
+              height: 270.h,
               width: double.infinity,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20),
@@ -50,7 +52,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(20),
                 child: Image.asset(
-                  'assets/Images/flag.png',
+                  AppImages.flag,
                   fit: BoxFit.cover,
                 ),
               ),
@@ -70,9 +72,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 prefixIcon: Padding(
                   padding: const EdgeInsets.all(12.0),
                   child: SvgPicture.asset(
-                    'assets/Images/Profile - Iconly Pro.svg',
-                    width: 24,
-                    height: 24,
+                    AppSvgs.profile,
+                    width: 24.w,
+                    height: 24.h,
                   ),
                 ),
                 filled: true,
@@ -106,7 +108,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     });
                   },
                   icon: SvgPicture.asset(
-                    'assets/Images/Unlock - Iconly Pro.svg',
+                    AppSvgs.unlock,
                     width: 24,
                     height: 24,
                   ),
@@ -114,9 +116,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 prefixIcon: Padding(
                   padding: const EdgeInsets.all(12.0),
                   child: SvgPicture.asset(
-                    'assets/Images/Password - Iconly Pro.svg',
-                    width: 24,
-                    height: 24,
+                    AppSvgs.password,
+                    width: 24.w,
+                    height: 24.h,
                   ),
                 ),
                 filled: true,
@@ -150,7 +152,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     });
                   },
                   icon: SvgPicture.asset(
-                    'assets/Images/Unlock - Iconly Pro.svg',
+                    AppSvgs.unlock,
                     width: 24,
                     height: 24,
                   ),
@@ -158,9 +160,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 prefixIcon: Padding(
                   padding: const EdgeInsets.all(12.0),
                   child: SvgPicture.asset(
-                    'assets/Images/Password - Iconly Pro.svg',
-                    width: 24,
-                    height: 24,
+                    AppSvgs.password,
+                    width: 24.w,
+                    height: 24.h,
                   ),
                 ),
                 filled: true,
@@ -190,7 +192,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
               },
               child: Container(
                 width: double.infinity,
-                height: 56,
+                height: 56.h,
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
                   color: AppColors.primary,

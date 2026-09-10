@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil_plus/flutter_screenutil_plus.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:todo/core/utils/apps_assets.dart';
 import 'package:todo/core/utils/apps_colors.dart';
 import 'package:todo/features/auth_screens/register_screen.dart';
 
@@ -17,9 +19,9 @@ class OnboardingScreen extends StatelessWidget {
             children: [ 
               Container(
                 child: SvgPicture.asset(
-             'assets/Images/onboarding.svg',
-                 width: 301.7,
-                  height: 342.86,
+             AppSvgs.onboarding,
+                 width: 301.7.w,
+                  height: 342.86.h,
                   fit: BoxFit.contain,
                 ),
               ),
@@ -27,8 +29,8 @@ class OnboardingScreen extends StatelessWidget {
               const SizedBox(height: 26),
               
               SizedBox(
-                width:147,
-                height: 60,
+                width:147.w,
+                height: 60.h,
                 child: Text(
                   'Welcome To\nDo It !',
                   textAlign: TextAlign.center,
@@ -43,8 +45,8 @@ class OnboardingScreen extends StatelessWidget {
               const SizedBox(height: 16),
               // Subtitle / Description
               SizedBox(
-                width: 314,
-                height: 40,
+                width: 314.w,
+                height: 40.h,
                 child: Text(
                   'Ready to conquer your tasks? Let\'s Do\nIt together.',
                   textAlign: TextAlign.center,
@@ -68,7 +70,7 @@ class OnboardingScreen extends StatelessWidget {
   },
   child: Container(
     width: double.infinity,
-    height: 56,
+    height: 56.h,
     alignment: Alignment.center,
     decoration: BoxDecoration(
       color: AppColors.primary,

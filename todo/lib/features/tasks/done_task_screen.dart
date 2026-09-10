@@ -1,5 +1,7 @@
 
-import 'package:flutter/material.dart'; 
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil_plus/flutter_screenutil_plus.dart';
+import 'package:todo/core/utils/apps_assets.dart'; 
 import 'package:todo/core/utils/apps_colors.dart'; 
  
  
@@ -82,8 +84,8 @@ class _DoneTaskScreenState extends State<DoneTaskScreen> {
                   crossAxisAlignment: CrossAxisAlignment.start, 
                   children: [ 
                     Container( 
-                      width: 60, 
-                      height: 60, 
+                      width: 60.w, 
+                      height: 60.h, 
                       decoration: const BoxDecoration( 
                         shape: BoxShape.circle, 
                         image: DecorationImage( 
@@ -138,9 +140,9 @@ class _DoneTaskScreenState extends State<DoneTaskScreen> {
                       child: Row( 
                         children: [ 
                           Image.asset( 
-                            'assets/Images/homeicon.png', 
-                            width: 20, 
-                            height: 20, 
+                            AppImages.homeIcon, 
+                            width: 20.w, 
+                            height: 20.h, 
                           ), 
                           SizedBox(width: 10), 
                           Text( 
@@ -159,9 +161,9 @@ class _DoneTaskScreenState extends State<DoneTaskScreen> {
                       child: Row( 
                         children: [ 
                           Image.asset( 
-                            'assets/Images/person.png', 
-                            width: 20, 
-                            height: 20, 
+                            AppImages.person, 
+                            width: 20.w, 
+                            height: 20.h, 
                           ), 
                           SizedBox(width: 10), 
                           Text( 
@@ -180,9 +182,9 @@ class _DoneTaskScreenState extends State<DoneTaskScreen> {
                       child: Row( 
                         children: [ 
                           Image.asset( 
-                            'assets/Images/workicon.png', 
-                            width: 20, 
-                            height: 20, 
+                            AppImages.workIcon, 
+                            width: 20.w, 
+                            height: 20.h, 
                           ), 
                           SizedBox(width: 10), 
                           Text( 
@@ -247,7 +249,7 @@ class _DoneTaskScreenState extends State<DoneTaskScreen> {
                 SizedBox(height: 20), 
                 Row( 
                   children: [ 
-                    Image.asset('assets/Images/calendar.png'), 
+                    Image.asset(AppImages.calender), 
                     const SizedBox(width: 8), 
                     const Text( 
                       '30 June, 2022  10:00 pm', 
