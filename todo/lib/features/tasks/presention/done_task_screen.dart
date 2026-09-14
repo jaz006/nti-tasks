@@ -270,4 +270,3 @@ class _DoneTaskScreenState extends State<DoneTaskScreen> {
     ); 
   } 
 }
-

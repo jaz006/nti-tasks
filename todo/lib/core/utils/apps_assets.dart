@@ -11,6 +11,7 @@ abstract class AppImages {
 
 abstract class AppSvgs {
   static final String logo = "assets/Images/logo.svg";
+  static final String emtyhome = "assets/Images/emtyhome.svg";
   static final String onboarding = "assets/Images/onboarding.svg";
   static final String paperPlus = "assets/Images/Paper Plus - Iconly Pro.svg";
   static final String password = "assets/Images/Password - Iconly Pro.svg";

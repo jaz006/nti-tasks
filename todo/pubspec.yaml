@@ -33,6 +33,9 @@ dependencies:
   cupertino_icons: ^1.0.8
   flutter_screenutil_plus: ^1.5.0
   flutter_svg: ^2.3.0
+  dio: ^5.11.1
+  dartz: ^0.10.1
+  image_picker: ^1.2.3
 
 dev_dependencies:
   flutter_test:
