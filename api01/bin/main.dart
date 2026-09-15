@@ -1,3 +1,5 @@
+// ignore_for_file: unused_import
+
 import 'package:api01/category/deleteCategory.dart';
 import 'package:api01/category/editCategory.dart';
 import 'package:api01/category/getCategory.dart';

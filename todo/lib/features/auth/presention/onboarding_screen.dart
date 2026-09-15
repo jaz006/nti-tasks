@@ -58,14 +58,19 @@ import 'package:todo/features/auth/presention/login_screen.dart';
               
               //const Spacer(),
 
-              CustomBtn(text: "Let’s Start", onPressed: (){
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => LoginScreen(),
-                  ),
-                );
-              })
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                child: Center(
+                  child: CustomBtn(text: "Let’s Start", onPressed: (){
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => LoginScreen(),
+                      ),
+                    );
+                  }),
+                ),
+              )
 
 
             ],
